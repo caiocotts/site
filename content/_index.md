@@ -1,0 +1,1 @@
+In Vim, :x is the same as :wq and somehow no one knows this
