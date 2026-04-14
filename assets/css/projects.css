@@ -1,0 +1,84 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  position: relative;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  padding: 2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.project-card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.project-description {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.6rem;
+}
+
+.project-tech {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tech li {
+  background-color: #1565c0;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+}
+
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-repo {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+/* Single page repo link */
+.page header .project-repo {
+  display: inline-block;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+/* Dark mode */
+.colorscheme-dark .project-card {
+  background-color: #424242;
+}
+
+.colorscheme-dark .project-tech li {
+  background-color: #42a5f5;
+  color: #212121;
+}

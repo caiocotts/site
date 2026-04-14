@@ -1,0 +1,29 @@
+{{ define "title" }}Projects · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+<section class="container">
+  <header>
+    <h1 class="title"><a class="title-link" href="{{ .Permalink }}">Projects</a></h1>
+  </header>
+  {{ .Content }}
+  <div class="project-grid">
+    {{ range .Pages }}
+    <article class="project-card">
+      <h2><a class="title-link project-card-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="project-description">{{ .Params.description }}</p>
+      <div class="project-card-footer">
+        {{ with .Params.tech }}
+        <ul class="project-tech">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+        {{ with .Params.repo }}
+        <a class="project-repo" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> Source
+        </a>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,19 @@
+{{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+<section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+      </h1>
+      {{ with .Params.repo }}
+      <a class="project-repo" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i> Source code
+      </a>
+      {{ end }}
+    </header>
+    {{ .Content }}
+  </article>
+</section>
+{{ partial "posts/math.html" . }}
+{{ end }}
