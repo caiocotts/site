@@ -22,7 +22,7 @@ The result is printed onto the terminal once you exit the program.
 
 You can read up on how RPN works more in depth in this post, but in simple
 terms, it's a way to write mathematical expressions without the need for
-paranthesis.
+parentheses.
 
 Currently it can perform all the fundamental operations that a regular
 calculator can like: adding, subtracting, multiplying, and dividing. In
@@ -58,9 +58,9 @@ Look no further than my git [repo](https://github.com/caiocotts/rpnc) :)
 
 ## Other Neat Things
 
-Implementing the RPL interpreter is a pretty intereting task. As I started
-studiying about interpreters, I started to notice in other languages, like Go
-for instance, the same techniques that I had read about. Like tokenization of
+Implementing the RPL interpreter is a pretty interesting task. As I started
+studying about interpreters, I started to notice in other languages, like Go for
+instance, the same techniques that I had read about. Like tokenization of
 strings during lexical analysis.
 
 Taken from token.go in token package of Go's standard library:
@@ -100,4 +100,4 @@ const (
 The specific book I chose to read to help me implement RPL is called
 [_Crafting Interpreters_](https://craftinginterpreters.com/) by Robert Nystrom.
 It's a step-by-step on how to build a language from scratch, but worded in a
-conversational tone. I highly recommed it.
+conversational tone. I highly recommend it.
