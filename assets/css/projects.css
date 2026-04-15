@@ -60,6 +60,7 @@
   font-size: 1.3rem;
   padding: 0.2rem 0.8rem;
   border-radius: 4px;
+  font-weight: bold;
   background-color: #6e7681; /* default fallback */
   color: #fff;
 }
@@ -78,7 +79,6 @@
 .project-tech li[data-lang="PHP"]        { background-color: #4F5D95; color: #fff; }
 .project-tech li[data-lang="Swift"]      { background-color: #F05138; color: #fff; }
 .project-tech li[data-lang="Kotlin"]     { background-color: #A97BFF; color: #fff; }
-
 .project-tech li[data-lang="Shell"]      { background-color: #89e051; color: #111; }
 .project-tech li[data-lang="HTML"]       { background-color: #e34c26; color: #fff; }
 .project-tech li[data-lang="CSS"]        { background-color: #563d7c; color: #fff; }
