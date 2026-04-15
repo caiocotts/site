@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  document.querySelectorAll('.content img').forEach(function(img) {
+    if (img.parentElement.tagName === 'A') return;
+    if (img.closest('.avatar')) return;
+    var a = document.createElement('a');
+    a.href = img.src;
+    a.className = 'glightbox';
+    img.parentNode.insertBefore(a, img);
+    a.appendChild(img);
+  });
+  GLightbox({ selector: '.glightbox' });
+</script>

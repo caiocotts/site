@@ -13,7 +13,7 @@
       <div class="project-card-footer">
         {{ with .Params.tech }}
         <ul class="project-tech">
-          {{ range . }}<li>{{ . }}</li>{{ end }}
+          {{ range . }}<li data-lang="{{ . }}">{{ . }}</li>{{ end }}
         </ul>
         {{ end }}
         {{ with .Params.repo }}

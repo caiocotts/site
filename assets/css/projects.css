@@ -1,3 +1,17 @@
+.image-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.image-row img {
+  height: 420px;
+  width: auto;
+  border-radius: 4px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
@@ -43,12 +57,34 @@
 }
 
 .project-tech li {
-  background-color: #1565c0;
-  color: #fff;
   font-size: 1.3rem;
   padding: 0.2rem 0.8rem;
   border-radius: 4px;
+  background-color: #6e7681; /* default fallback */
+  color: #fff;
 }
+
+/* GitHub language colors */
+.project-tech li[data-lang="Go"]         { background-color: #00ADD8; color: #fff; }
+.project-tech li[data-lang="Python"]     { background-color: #3572A5; color: #fff; }
+.project-tech li[data-lang="JavaScript"] { background-color: #f1e05a; color: #111; }
+.project-tech li[data-lang="TypeScript"] { background-color: #3178c6; color: #fff; }
+.project-tech li[data-lang="Rust"]       { background-color: #dea584; color: #111; }
+.project-tech li[data-lang="Java"]       { background-color: #b07219; color: #fff; }
+.project-tech li[data-lang="C"]          { background-color: #555555; color: #fff; }
+.project-tech li[data-lang="C++"]        { background-color: #f34b7d; color: #fff; }
+.project-tech li[data-lang="C#"]         { background-color: #178600; color: #fff; }
+.project-tech li[data-lang="Ruby"]       { background-color: #701516; color: #fff; }
+.project-tech li[data-lang="PHP"]        { background-color: #4F5D95; color: #fff; }
+.project-tech li[data-lang="Swift"]      { background-color: #F05138; color: #fff; }
+.project-tech li[data-lang="Kotlin"]     { background-color: #A97BFF; color: #fff; }
+
+.project-tech li[data-lang="Shell"]      { background-color: #89e051; color: #111; }
+.project-tech li[data-lang="HTML"]       { background-color: #e34c26; color: #fff; }
+.project-tech li[data-lang="CSS"]        { background-color: #563d7c; color: #fff; }
+.project-tech li[data-lang="Vue"]        { background-color: #41b883; color: #fff; }
+.project-tech li[data-lang="Docker"]     { background-color: #2496ED; color: #fff; }
+.project-tech li[data-lang="SQL"]        { background-color: #e38c00; color: #fff; }
 
 .project-card-footer {
   display: flex;
@@ -76,9 +112,4 @@
 /* Dark mode */
 .colorscheme-dark .project-card {
   background-color: #424242;
-}
-
-.colorscheme-dark .project-tech li {
-  background-color: #42a5f5;
-  color: #212121;
 }

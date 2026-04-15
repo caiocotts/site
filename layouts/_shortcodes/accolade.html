@@ -1,0 +1,16 @@
+<div class="accolade-card accolade-card--{{ .Get "color" | default "blue" }}">
+    <div class="accolade-icon"><i class="fa-solid fa-{{ .Get "icon" }}"></i></div>
+    <div class="accolade-body">
+        <div class="accolade-meta">
+            <span class="accolade-badge">{{ .Get "badge" }}</span>
+        </div>
+        <h2>{{ .Get "title" }}</h2>
+        <h3>{{ .Get "subtitle" }}</h3>
+        <p>{{ .Inner | markdownify }}</p>
+        {{ with .Get "link" }}
+        <a class="accolade-link" href="{{ . }}" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-arrow-down"></i> {{ $.Get "link-label" | default "View Document" }}
+        </a>
+        {{ end }}
+    </div> 
+</div>

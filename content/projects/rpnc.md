@@ -1,9 +1,9 @@
 +++
 date = 2026-03-20T12:46:54-04:00
-title = "rpnc"
+title = "RPNC"
 math = true
 description = "An RPN calculator for the CLI"
-tech = ["Golang"]
+tech = ["Go"]
 repo = "https://github.com/caiocotts/rpnc"
 +++
 

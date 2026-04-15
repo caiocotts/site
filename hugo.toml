@@ -11,6 +11,11 @@ pagination.pagerSize = 20
 [markup.highlight]
 style = "github-dark"
 
+# set this to false if you ever do anything that isn't static on this website
+# leaving it true makes the website susceptible to cross-site scripting attacks
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 author = "Caio Cotts"
 info = "Software Engineer"
@@ -30,7 +35,7 @@ enableTwemoji = true
 colorScheme = "auto"
 hidecolorschemetoggle = false
 
-customCSS = ["css/projects.css"]
+customCSS = ["css/projects.css", "css/accolades.css"]
 # customSCSS = ["scss/custom.scss"]
 # customJS = ["js/custom.js"]
 
@@ -65,12 +70,23 @@ name = "About"
 weight = 1
 url = "about/"
 
+[[menu.main]]
+name = "Projects"
+weight = 2
+url = "projects/"
+
 # [[menu.main]]
 # name = "Blog"
-# weight = 2
+# weight = 3
 # url = "posts/"
 
 [[menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
+name = "Accolades"
+weight = 4
+url = "accolades/"
+
+
+[[menu.main]]
+name = "Resume"
+weight = 5
+url = "resume/"
