@@ -35,7 +35,11 @@ The Handy Automator is composed of many different components and moving parts.
 
 It makes no sense to have an automation system that has no devices to automate.
 For the purposes of demonstration and proof of concept, we just used Wi-Fi
-capable arduinos and hooked them up to some LED lights. Each edge device exposes
+capable arduinos and hooked them up to some LED lights.
+
+{{<figure src="https://files.caiocotts.com/handy/ed.jpg" class="centered">}}
+
+ Each edge device exposes
 a very simple little API just to toggle its state from OFF to ON and vice-versa:
 
 ```ino
@@ -127,7 +131,7 @@ paths:
         $ref: paths/workflow_trigger.yml
 ```
 
-To go interfaces:
+To Go interfaces:
 
 ```go
 // StrictServerInterface represents all server handlers.
